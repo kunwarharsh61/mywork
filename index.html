@@ -1,5 +1,4 @@
-<! doctype html>
-
+<!doctype html>
 <html>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,57 +7,22 @@
 
 <title> HARSH KUNWAR </title>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="Menu.html">Practice Work</a>
-<a href="https://www.behance.net/harshkunwar3">Behance</a>
-<a href="">Figma</a>
-<a href="#main"> About me </a>
-</nav>
+<header>
+<img src="images/banner.jpg" class="pict">
+</header>
 
 </head>
-
 <style>
-nav
+.pict
 {
 width:100%;
-text-align:center;
-padding:40px;
-Background: #FF6F3C;
-margin:0 px;
-
+height:200px;
 }
 
-
-nav a:link
+header
 {
-transition:0.50s;
-text-decoration:none;
-font-family: Arial, sans-serif;
-font-size:20px;
-padding:40px;
-margin: 0;
-color: white;
-}
-
-
-nav a:visited
-{
-color:White;
-}
-
-
-nav a:hover
-{
-text-decoration:underline;
-background: black;
-padding: 20px;
-border-radius:"";
-}
-
- nav a: active
-{
-color:black;
+height:200px;
+background:black;
 }
 
 .pic
@@ -68,7 +32,6 @@ Margin:auto;
 margin-top: 10px;
 border-radius:100%;
 }
-
 
 #main
 {
@@ -84,69 +47,122 @@ padding:10px;
 body
 {
 Margin: 0px; 
-text-align: center; 
 font-family: Arial, sans-serif; 
 margin: 0; 
-padding: 0;background-color:; 
+padding: 0;
+background-color:; 
 color: #333533; 
 text-align: center;
 }
 
 
-/* Extra small devices (phones,600px and down) */
-@media only screen and (max-width: 600px) 
-{
-nav
+.side-nav
 {
 width:100%;
 text-align:center;
-padding:20px;
-Background: #FF6F3C;
-margin-top:30px;
-
+margin:0;
+padding:0;
 }
 
-
-nav a:link
+.side-nav ol
 {
-transition:0.50s;
+list-style:none;
+padding:0;
+margin:0;
+text-align:center;
+ display:none;
+}
+
+.side-nav ol li
+{
+background:teal;
+padding:15px;
+ width:100%;
+border-bottom:1px white ridge; 
+box-shadow:0 5px 5px rgba(0,0,0,0.2);
+display:block;
+}
+
+.side-nav ol li:hover
+{
+background:black;
+}
+
+.side-nav ol li a:link,
+.side-nav ol li a:visited
+{
+color:white;
+font-size:18px;
 text-decoration:none;
-font-family: Arial, sans-serif;
-font-size:10px;
-padding:20px;
-margin: 0;
-color: white;
+display:block;
 }
 
-
-nav a:visited
-{
-color:White;
-}
-
-
-nav a:hover
+.side-nav ol li:hover a
 {
 text-decoration:underline;
-background: black;
-padding: 10px;
-border-radius:"";
 }
 
- nav a: active
+#menu
 {
-color:black;
+cursor:pointer;
+font-size:40px;
+background:gray;
+padding:10px 15px;
+display:block;
+text-align:center;
+color:white;
 }
 
+.side-nav:hover ol
+{
+display:block;
+}
+
+
+.desktop-nav
+{
+width:100%;
+background:#FF6F3C;
+padding:20px 0;
+text-align:center;
+display:none;
+}
+
+.desktop-nav a
+{
+color:white;
+font-size:20px;
+padding:20px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.desktop-nav a:hover
+{
+text-decoration:underline;
+background:black;
+padding:15px 20px;
+}
+
+footer
+{
+background:black;
+color:white;
+padding:20px;
+margin-top:40px;
+}
+
+/* Extra small devices (phones,600px and down) */
+@media only screen and (max-width: 600px) 
+{
 .pic
 {
 width: 55%;
 Margin:auto;
 margin-top: 10px;
 border-radius:100%;
-}
+  }
 
-}
 #main
 {
 width:60%;
@@ -156,43 +172,63 @@ font-size:10px;
 border:0px black solid;
 text-align:justify;
 padding:10px;
+  }
 }
 
-body
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
 {
-Margin: 0px; 
-font-family: Arial, sans-serif; 
-margin: 0; 
-padding: 0;background-color:; 
-color: #333533; 
-text-align: center;
+.side-nav
+{
+display:none;
 }
-
-
-
-
+  
+.desktop-nav
+{
+display:block;
+}
+}
 </style>
-
-
 
 <body>
 
-<img src="harshkunwar.jpeg" class="pic">
+<nav class="side-nav">
+<span id="menu">  &#9776;</span>
+<ol>
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Practice Work</a></li>
+<li><a href="https://www.behance.net/harshkunwar3">Behance</a></li>
+<li><a href="#">Figma</a></li>
+<li><a href="#main">About me</a></li>
+</ol>
+</nav>
+
+<nav class="desktop-nav">
+<a href="index.html">Home</a>
+<a href="menu.html">Practice Work</a>
+<a href="https://www.behance.net/harshkunwar3">Behance</a>
+<a href="#">Figma</a>
+<a href="#main">About me</a>
+</nav>
+
+<img src="images/harshkunwar.jpeg" class="pic">
 
 <p Style="font-size: 20px; color: black;">
-I'm Harsh Kunwar. Explore my work and learn more about me!
+ I'm Harsh Kunwar. Explore my work and learn more about me!
 </p>
 
 <div id="main">
-
 <h3 Style="font-size: 40px; color: Black;"><b>About me</b> </h3>
 
-
 <p Style="font-size: 20px; color: black;">
- I'm Harsh Kunwar, a passionate graphic, motion graphic, and web designer with a keen eye for aesthetics and a love for storytelling through design. 
+I'm Harsh Kunwar, a passionate graphic, motion graphic, and web designer with a keen eye for aesthetics and a love for storytelling through design. 
 I specialize in creating visually compelling graphics, engaging animations, and user-friendly websites that bring ideas to life. With a strong foundation in design principles and expertise in tools like Adobe Creative Suite, I strive to craft creative solutions that enhance user experiences and leave a lasting impact. 
-I’m always excited to collaborate and explore new ways to push the boundaries of digital design.
+I'm always excited to collaborate and explore new  ways to push the boundaries of digital design.
 </p>
- 
+</div>
+
+<footer>
+ Harsh Kunwar. 
+</footer> 
 </body>
 </html>
