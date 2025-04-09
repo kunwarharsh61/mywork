@@ -11,6 +11,13 @@ from{transform:scale(3);}
 to{transform:scale(1);}
 }
 
+@keyframes glow 
+{
+0% { box-shadow: 0 0 5px white; }
+50% { box-shadow: 0 0 20px white; }
+100% { box-shadow: 0 0 5px white; }
+}
+
 body 
 {
 text-align:center;
@@ -23,7 +30,28 @@ width:40%;
 height:auto; 
 box-shadow:10px 10px 10px white;
 animation:one1 1s ease-out;
+transition:0.5s ease-in-out;
 }
+
+.pic:hover 
+{
+transform:scale(1.05);
+box-shadow:0 0 20px 5px white;
+}
+
+header img 
+{
+width:60px;
+height:auto;
+animation:glow 2s infinite;
+transition:transform 0.3s;
+}
+
+header img:hover 
+{
+transform:scale(1.1);
+}
+
 </style>
 
 <body>

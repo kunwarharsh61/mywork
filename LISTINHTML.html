@@ -1,20 +1,12 @@
-
-
 <!doctype html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!--
-<meta http-equiv = "refresh" content="1">
--->
 <head>
 <title>list</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
-
-<p style="background: #E85D04; Width: 10%; Margin: Auto;  margin-bottom: 20px; text-align: Center; Font-size:30px; Color: White; Font-family: Arial; Padding:10px; border-radius: 30px;"> 
-<a href="Menu.html"> Back </a> </p>
 
 
 <style>
@@ -32,8 +24,6 @@ background-color: white;
 color: #E85D04;
 transition: 0.3s;
 }
-
-
 
 #main
 {
@@ -56,7 +46,6 @@ h1,h2,h3,h4
 color: #E85D04;
 }
 
-
 header
 {
 background: #E85D04;
@@ -67,17 +56,19 @@ text-align:center;
 
 body
 {
-background-image:url(images/black.jpg);
+background-image:url("images/black.jpg");
+background-size:cover;
+background-attachment: fixed;
+background-position: center;
 }
-
 </style>
 
 <body>
 <header class="mystyle">
 LIST IN HTML
-
 </header>
 <div id="main">
+
 <h2>Creating Reference </h2>
 <h3>Type of list</h3>
 <p>Order List and Unorder List</p>
@@ -87,7 +78,6 @@ LIST IN HTML
 <li>Usa</li>
 <li>Uk</li>
 <li>Japan</li>
-
 </ol>
 <h2>Unorder List Example</h2>
 <ul>
@@ -188,16 +178,8 @@ LIST IN HTML
                        <li>Nagaland</li>
                     </ul>
                   </li>
-
-
-
-
                 </ol>
-
-
 </li>
-
-
 <li>Usa</li>
 <li>Uk</li>
 <li>Japan</li>
@@ -221,5 +203,47 @@ LIST IN HTML
 <li>Japan</li>
 </ol>
 
+<hr color=" #E85D04" size="5"/>
+<h2>Custom Bullet Points with Icons</h2>
+<ul style="list-style: none; padding: 0px;">
+<li>⭐ Home</li>
+<li>➖ Product</li>
+<li>📦 Services</li>
+<li>🌐 Japan</li>
+</ul>
+
+<h2>Using Star Icon List</h2>
+<ul style="list-style: none; padding: 0px;">
+<li>⭐ India</li>
+<li>⭐ USA</li>
+<li>⭐ UK</li>
+<li>⭐ Japan</li>
+</ul>
+
+<h2>Using Minus Icon List</h2>
+<ul style="list-style: none; padding: 0px;">
+<li>➖ India</li>
+<li>➖ USA</li>
+<li>➖ UK</li>
+<li>➖ Japan</li>
+</ul>
+
+<h2>Using Tick Icon List</h2>
+<ul style="list-style: none; padding: 0px;">
+<li>✅ Delhi</li>
+<li>✅ Mumbai</li>
+<li>✅ Chennai</li>
+<li>✅ Kolkata</li>
+</ul>
+
+<h2>Using Emoji Icons</h2>
+<ul style="list-style: none; padding: 0px;">
+<li>🌟 Feature 1</li>
+<li>🔥 Feature 2</li>
+<li>💡 Feature 3</li>
+<li>📌 Feature 4</li>
+</ul>
+
 </div>
 </body>
+</html>

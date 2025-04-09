@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<title>Movie Collection</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+#container
+{
+//background:gray;
+width:100%;
+box-shadow:10px 10px 10px gray;
+margin:auto;
+margin-top:20px;
+overflow-x: auto;
+}
+
+#container table
+{
+width:100%;
+background: #1e1e2f;
+text-align:center;
+color: white;
+border-collapse: collapse;
+font-family: Arial, sans-serif;
+}
+
+td, th
+{
+padding: 12px;
+border-bottom: 2px solid #ffd700;
+}
+
+tr:hover
+{
+background-color: #3b3b5b;
+}
+
+td
+{
+transition: 0.3s;
+}
+td:hover
+{
+cursor: pointer;
+background: #ffd700;
+color: black;
+}
+
+caption
+{
+font-size: 40px;
+margin-bottom: 10px;
+color: #ffd700;
+text-shadow: 1px 1px 2px black;
+}
+
+</style>
+</head>
+
+<body>
+<div id="container">
+<table border="0" cellpadding="10" cellspacing="1">
+<caption>Movie Collection</caption>
+
+<tr bgcolor="purple">
+<th colspan="6" style="color:white">MOVIES</th>
+</tr>
+
+<tr>
+<th>ID</th><th>Title</th><th>Genre</th><th>Rating</th><th>Year</th><th>Box Office (M)</th>
+</tr>
+
+<tr>
+<td data-label="ID">001</td><td data-label="Title">Inception</td><td data-label="Genre">Sci-Fi</td><td data-label="Rating">8.8</td><td data-label="Year">2010</td><td data-label="Box Office (M)">829</td>
+</tr>
+
+<tr>
+<td data-label="ID">002</td><td data-label="Title">Interstellar</td><td data-label="Genre">Sci-Fi</td><td data-label="Rating">8.6</td><td data-label="Year">2014</td><td data-label="Box Office (M)">677</td>
+</tr>
+
+<tr>
+<td data-label="ID">003</td><td data-label="Title">Parasite</td><td data-label="Genre">Thriller</td><td data-label="Rating">8.6</td><td data-label="Year">2019</td><td data-label="Box Office (M)">258</td>
+</tr>
+
+<tr>
+<td data-label="ID">004</td><td data-label="Title">Joker</td><td data-label="Genre">Drama</td><td data-label="Rating">8.4</td><td data-label="Year">2019</td><td data-label="Box Office (M)">1074</td>
+</tr>
+
+<tr>
+<td data-label="ID">005</td><td data-label="Title">Avengers: Endgame</td><td data-label="Genre">Action</td><td data-label="Rating">8.4</td><td data-label="Year">2019</td><td data-label="Box Office (M)">2798</td>
+</tr>
+
+<tr>
+<td data-label="ID">006</td><td data-label="Title">Shawshank Redemption</td><td data-label="Genre">Drama</td><td data-label="Rating">9.3</td><td data-label="Year">1994</td><td data-label="Box Office (M)">58</td>
+</tr>
+
+<tr>
+<td data-label="ID">007</td><td data-label="Title">Forrest Gump</td><td data-label="Genre">Comedy/Drama</td><td data-label="Rating">8.8</td><td data-label="Year">1994</td><td data-label="Box Office (M)">678</td>
+</tr>
+
+<tr>
+<td data-label="ID">008</td><td data-label="Title">Spider-Man: No Way Home</td><td data-label="Genre">Action</td><td data-label="Rating">8.3</td><td data-label="Year">2021</td><td data-label="Box Office (M)">1900</td>
+</tr>
+
+<tr>
+<td data-label="ID">009</td><td data-label="Title">Frozen II</td><td data-label="Genre">Animation</td><td data-label="Rating">6.8</td><td data-label="Year">2019</td><td data-label="Box Office (M)">1450</td>
+</tr>
+
+<tr>
+<td data-label="ID">010</td><td data-label="Title">The Batman</td><td data-label="Genre">Action</td><td data-label="Rating">7.8</td><td data-label="Year">2022</td><td data-label="Box Office (M)">770</td>
+</tr>
+
+<tr>
+<th colspan="6" style="color: #ffd700;">End of Collection</th>
+</tr>
+
+</table>
+</div>
+</body>
+</html>

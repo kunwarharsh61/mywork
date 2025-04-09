@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+
+<head>
+
+<title>News</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<header>
+<div id="logo">
+TODAY'S WEATHER NEWS
+</div>
+</header>
+<hr color="black" size="5px" width="99%"/>
+
+<style>
+@keyframes movetext
+{
+from{margin-left:100px;}
+to{margin-left:-3500px;}
+}
+
+@keyframes blink
+{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+@keyframes mycolor
+{
+10%{color:Black; background:white;}
+100%{color:white; background:black;}
+}
+
+body
+{
+overflow-x:hidden;
+}
+
+#logo
+{
+color:purple;
+font-family:Arial black;
+padding-left:50px;
+font-size:50px;
+transition:2s;
+animation:blink 2s infinite alternate;
+text-align:center;
+}
+
+
+#mes
+{
+color:;
+font-size:30px;
+font-family: Ariel;
+transition:2s;
+Width:90%;
+Height:400px;
+Padding:20px;
+border-radius:10px;
+margin-top:20px;
+margin-left:80px;
+text-align:justify;
+animation:mycolor 20s infinite alternate; 
+border: 2px solid #ccc;
+}
+
+#strip
+{
+color:white;
+font-size:50px;
+background:Black;
+text-transform:uppercase;
+padding:20px;
+font-family: "News Cycle", sans-serif;
+Word-spacing:15px;
+Letter-spacing:7px;
+Width:5000px;
+}
+
+#news 
+{
+background:purple;
+color: white;
+overflow: hidden;
+white-space: nowrap;
+padding: 15px 0;
+margin: 0 auto;
+width: 100%;
+box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#text 
+{
+display: inline-block;
+padding-left: 100%;
+animation: movetext 20s linear infinite;
+font-family: 'News Cycle', sans-serif;
+font-weight: 700;
+font-size: clamp(1rem, 2vw, 1.5rem);
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+
+.pic 
+{
+display: block;
+max-width: 90%;
+height: auto;
+margin: 20px auto;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+transition: transform 0.3s ease;
+}
+
+.pic:hover
+{
+transform: scale(1.01);
+}
+
+footer 
+{
+height: 50px;
+font-family: 'Arial Black', sans-serif;
+color: white;
+background: black;
+cursor: pointer;
+text-align: center;
+line-height: 50px;
+margin-top: 20px;
+}
+/* Extra small devices (phones,600px and down) */
+@media only screen and (max-width: 600px) 
+{
+#logo
+{
+padding-left:50px;
+font-size:20px;
+}
+
+#mes
+{
+
+font-size:20px;
+Width:90%;
+Height:400px;
+Height:400px;
+Padding:20px;
+border-radius:10px;
+margin-top:20px;
+margin-left:0px;
+}
+
+footer 
+{
+height: 50px;
+line-height: 50px;
+}
+
+}
+
+</style>
+
+<body bgcolor="White">
+
+<hr>
+<div id="news">
+<div id="text">
+• Breaking: Heatwave alert issued for Northern India • Ghaziabad temperature to reach 40°C today • Air quality moderate in Loni area • Weekly forecast shows rising temperatures • Stay hydrated and avoid direct sunlight during peak hours •
+</div>
+</div>
+<img src="images/7.webp" class="pic">
+<hr>
+
+
+<div id="mes">
+Today’s minimum temperature in Ghaziabad is recorded at 26°c (degrees celsius), and the maximum temperature is expected to go as high as 40°c (degrees celsius). Throughout the day, the temperature is likely to hover around 39°c (degrees celsius). The wind will blow at the speed of 4.39, and with the gust of 6.73, it will blow at 135 degrees.The sun will rise at around 06:02 AM in the morning, and around 06:41 PM, it will set in the evening. As per the weekly weather forecast of Ghaziabad, the temperature expected on the different days of the week will be 40 degrees Celsius on Tuesday, 42 degrees Celsius on Wednesday, 43 degrees Celsius on Thursday, 41 degrees Celsius on Friday, 39 degrees Celsius on Saturday, 40 degrees Celsius on Sunday and 41 degrees Celsius on Monday. 
+</div>
+
+<div id="mes">
+Today, Air Quality Index (AQI) in Loni, Ghaziabad, UP stands at PM10 180. This level of AQI comes under the Moderate Category.As per System of Air Quality and Weather Forecasting And Research (SAFAR-India ) An AQI for PM10 between zero and 50 is considered 'good', 50 and 100 'satisfactory', 100 and 200 'moderate', 200 and 300 'poor', 300 and 400 'very poor', and 400 and 500 'severe'.
+</div>
+
+<div style="height:100px;"></div>
+
+
+<footer>
+ © 2025 Today's Weather News | Updated Hourly
+</footer>
+</body>
+
+<html>
