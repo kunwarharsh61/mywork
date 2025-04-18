@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+<head>
+<title>Amazon Style Cards</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+html, body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+}
+
+header {
+width: 100%;
+height: 80px;
+background: #131921;
+color: white;
+text-align: Left;
+padding-left: 30px;
+line-height: 80px;
+font-size: 28px;
+font-weight: bold;
+box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+position: fixed;
+top: 0;
+z-index: 100;
+}
+
+#container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+padding: 100px 20px 20px;
+max-width: 1400px;
+margin: 0 auto;
+}
+
+.card {
+width: 280px;
+background: white;
+border-radius: 8px;
+padding: 15px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+transition: transform 0.3s ease;
+margin-bottom: 20px;
+}
+
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card img 
+{
+width: 100%;
+height: 200px;
+object-fit: contain;
+border-bottom: 1px solid #eee;
+padding-bottom: 15px;
+margin-bottom: 15px;
+}
+
+.card h3 {
+font-size: 18px;
+margin: 0 0 10px;
+color: #0066c0;
+height: 40px;
+overflow: hidden;
+}
+
+.card ol {
+padding: 0;
+margin: 0;
+}
+
+.card ol li {
+list-style: none;
+font-size: 16px;
+padding: 4px 0;
+color: #555;
+}
+
+.card ol li:
+{
+font-weight: bold;
+color: #B12704;
+font-size: 18px;
+}
+
+.card button {
+width: 100%;
+padding: 10px;
+margin-top: 15px;
+background: #FFD814;
+border: none;
+border-radius: 8px;
+font-size: 16px;
+font-weight: bold;
+color: #111;
+cursor: pointer;
+transition: background 0.2s;
+}
+
+.card button:hover {
+background: #F7CA00;
+}
+
+footer {
+background: #131921;
+color: white;
+text-align: center;
+padding: 20px;
+font-family: Arial;
+font-size: 14px;
+margin-top:50px;
+}
+footer h3 {
+color: orange;
+margin-bottom: 10px;
+}
+footer p {
+margin: 5px;
+}
+
+
+
+
+
+
+
+
+</style>
+
+<body>
+<header>🛒Buyit</header>
+
+<div id="container">
+<div class="card">
+<img src="images/m1.png" >
+<h3>Black t-shirt and White Pants</h3>
+<ol>
+<li>₹959</li>
+<li>20% off</li>
+<li>Free Delivery</li>
+<li><button>Add to Cart</button></li>
+</ol>
+</div>
+
+<div class="card">
+<img src="images/m2.png" >
+<h3>White T-shirt and jeans</h3>
+<ol>
+<li>₹989</li>
+<li>17% off</li>
+<li>Free Delivery</li>
+<li><button>Add to Cart</button></li>
+</ol>
+</div>
+
+<div class="card">
+<img src="images/m3.png">
+<h3>Men's suit</h3>
+<ol>
+<li>₹4,599</li>
+<li>18% off</li>
+<li>Free Delivery</li>
+<li><button>Add to Cart</button></li>
+</ol>
+</div>
+
+<div class="card">
+<img src="images/m4.png" >
+<h3>women's suit</h3>
+<ol>
+<li>₹3,999</li>
+<li>30% off</li>
+<li>Free Delivery</li>
+<li><button>Add to Cart</button></li>
+</ol>
+</div>
+
+<div class="card">
+<img src="images/m5.png" >
+<h3>JBL wireless headphone </h3>
+<ol>
+<li>₹1,199</li>
+<li>15% off</li>
+<li>Free Delivery</li>
+<li><button>Add to Cart</button></li>
+</ol>
+</div>
+
+<div class="card">
+<img src="images/m6.png" >
+<h3>XYZ neckband(Bluetooth 5.3)</h3>
+<ol>
+<li>₹499</li>
+<li>10% off</li>
+<li>Free Delivery</li>
+<li><button>Add to Cart</button></li>
+</ol>
+</div>
+
+<div class="card">
+<img src="images/m7.png">
+<h3>Smart watch</h3>
+<ol>
+<li>₹4,899</li>
+<li>9% off</li>
+<li>Free Delivery</li>
+<li><button>Add to Cart</button></li>
+</ol>
+</div>
+
+<div class="card">
+<img src="images/m8.png">
+<h3>Nike sports shoes</h3>
+<ol>
+<li>₹1,999</li>
+<li>45% off</li>
+<li>Free Delivery</li>
+<li><button>Add to Cart</button></li>
+</ol>
+</div>
+
+<div class="card">
+<img src="images/m9.png" >
+<h3>Nike sneakers</h3>
+<ol>
+<li>₹2,499</li>
+<li>65% off</li>
+<li>Free Delivery</li>
+<li><button>Add to Cart</button></li>
+</ol>
+</div>
+
+<div class="card">
+<img src="images/m10.png" >
+<h3>Women hand bag and heels (combo offer)</h3>
+<ol>
+<li>₹2,199</li>
+<li>19% off</li>
+<li>Free Delivery</li>
+<li><button>Add to Cart</button></li>
+</ol>
+</div>
+</div>
+
+<footer>
+<h3>Contact Us</h3>
+<p>Email: harshkunwar61@gmail.com</p>
+<p>Phone: +91-7303xxxxxx</p>
+<p>© 2025 Created by Harsh Kunwar. All rights reserved.</p>
+</footer>
+
+</body>
+
+</html>
+
+
+
