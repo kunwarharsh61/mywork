@@ -1,33 +1,13 @@
 <!doctype html>
 <html>
-
-
 <head>
 <title>Login</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dela+Gothic+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
 
-
-</head>
-
-
-
-
 <style>
-
-.roboto-serif-<uniquifier> {
-  font-family: "Roboto Serif", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100,
-    "GRAD" 0;
-}
-
-
 body {
 margin: 0;
 padding: 0;
@@ -37,6 +17,7 @@ background-position: center;
 background-attachment: fixed;
 height: 100vh;
 overflow: hidden; 
+font-family: "Roboto Serif", serif;
 }
 
 #main {
@@ -59,7 +40,7 @@ overflow-y: auto;
 table {
 margin: auto;
 width: 100%;
-height:80%;
+height: 80%;
 padding: 10px;
 font-size: 25px;
 }
@@ -90,22 +71,93 @@ transition: background 0.3s;
 input[type="submit"]:hover, input[type="reset"]:hover {
 background: #2c5fb3;
 }
+
+
+@media only screen and (max-width: 1024px) {
+#main {
+width: 65%;
+height: 45%;
+}
+    
+table {
+font-size: 22px;
+}
+    
+input[type="text"], 
+input[type="password"] {
+font-size: 18px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+#main {
+width: 75%;
+height: 50%;
+padding: 15px;
+}
+    
+table {
+font-size: 20px;
+}
+    
+caption {
+font-size: 26px;
+}
+}
+
+@media only screen and (max-width: 480px) {
+#main {
+width: 85%;
+height: 55%;
+padding: 10px;
+}
+    
+table {
+font-size: 18px;
+padding: 5px;
+}
+    
+caption {
+font-size: 22px;
+margin-bottom: 15px;
+}
+    
+input[type="text"], 
+input[type="password"] {
+font-size: 16px;
+height: 28px;
+}
+    
+input[type="submit"], 
+input[type="reset"] {
+width: 80px;
+height: 36px;
+font-size: 16px;
+}
+}
+
+@media only screen and (max-width: 360px) {
+#main {
+width: 90%;
+height: 60%;
+}
+
+table {
+font-size: 16px;
+}
+    
+caption {
+font-size: 20px;
+}
+}
 </style>
-
-
+</head>
 
 <body>
-
-
-
-
 <div id="main">
-
 <table border="0" cellpadding="5">
-
-<caption style="font-size:30px;font-weight:bold;margin-bottom:20px;color:white;font-family: "Roboto Serif", serif;text-shadow:1px 1px 3px black;">Login Form</caption>
+<caption style="font-size:30px;font-weight:bold;margin-bottom:20px;color:white;font-family: 'Roboto Serif', serif;text-shadow:1px 1px 3px black;">Login Form</caption>
 <form action="">
-
 <tr>
 <td>
 <label for="uid" style="color:white;text-shadow:1px 1px 2px black;">Login id</label>
@@ -114,7 +166,6 @@ background: #2c5fb3;
 <input id="uid" type="text" placeholder="Type user id here..." required title="type user id here...!">
 </td>
 </tr>
-
 <tr>
 <td>
 <label for="pass" style="color:white;text-shadow:1px 1px 2px black;">Password</label>
@@ -123,7 +174,6 @@ background: #2c5fb3;
 <input id="pass" title="type Password...!" type="password" placeholder="Type user Password..." required>
 </td>
 </tr>
-
 <tr>
 <td></td>
 <td>
@@ -131,14 +181,8 @@ background: #2c5fb3;
 <input type="reset">
 </td>
 </tr>
-
 </form>
 </table>
-
 </div>
-
-
 </body>
-
 </html>
-
