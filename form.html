@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Registration Form</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Bungee+Spice&family=DM+Serif+Text:ital@0;1&family=Dela+Gothic+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<style>
+   
+body {
+background-image: url('images/bg2.jpeg');
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 20px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#main {
+background: rgba(255, 255, 255, 0.85);
+width:800px;
+
+margin: 30px auto;
+text-align: center;
+border-radius: 15px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+padding: 25px;
+}
+
+table {
+width: 100%;
+}
+
+  
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="birth"],
+input[type="color"],
+input[type="flavors"],
+
+textarea,
+select {
+width: 100%;
+padding: 12px;
+margin: 8px 0;
+border: 1px solid #ddd;
+border-radius: 6px;
+font-size: 16px;
+box-sizing: border-box;
+background: rgba(255, 255, 255, 0.9);
+}
+
+input[list="flavors"]
+{
+width: 100%;
+padding: 12px;
+margin: 8px 0;
+border: 1px solid #ddd;
+border-radius: 6px;
+font-size: 16px;
+box-sizing: border-box;
+background: rgba(255, 255, 255, 0.9);
+}
+
+textarea {
+min-height: 120px;
+}
+
+   
+input[type="submit"],
+input[type="reset"] {
+width: 45%;
+padding: 12px;
+margin: 15px 2%;
+font-size: 16px;
+}
+
+   
+input[type="radio"],
+input[type="checkbox"] {
+width: auto;
+margin-right: 10px;
+transform: scale(1.2);
+}
+
+ 
+@media (max-width: 768px) {
+#main {
+width: 95%;
+padding: 15px;
+}
+
+table {
+display: block;
+}
+
+
+
+input[type="submit"],
+input[type="reset"] {
+width: 100%;
+margin: 10px 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+transform: scale(1.4);
+margin-right: 15px;
+}
+}
+
+@media (max-width: 480px) {
+body {
+padding: 10px;
+}
+
+#main {
+margin: 15px auto;
+border-radius: 10px;
+}
+
+caption {
+font-size: 24px;
+padding: 10px;
+}
+
+input, select, textarea {
+font-size: 14px;
+padding: 10px;
+}
+}
+</style>
+
+
+
+
+<body>
+
+
+
+<div id="main">
+<table border="0" cellpadding="10">
+<caption style="font-size:30px; font-family: "Dela Gothic One", sans-serif;">Registration Form</caption>
+<form action="http://example.com/submit" method="post" enctype="multipart/form-data">
+<tr>
+<td><label for="name">Full Name*</label></td>
+<td><input id="name" type="text" placeholder="Enter your name" required></td>
+</tr>
+
+
+<tr>
+<td><label for="age">Age*</label></td>
+<td><input id="age" type="number" min="16" max="100" required></td>
+</tr>
+
+
+<tr>
+<td><label>Gender*</label></td>
+<td>
+Male <input type="radio" name="gender" value="male" checked>
+Female <input type="radio" name="gender" value="female">
+Other <input type="radio" name="gender" value="other">
+</td>
+</tr>
+
+
+<tr>
+<td><label for="phone">Phone Number*</label></td>
+<td><input id="phone" type="tel" placeholder="+91 9876543210" required></td>
+</tr>
+<tr>
+<td><label for="email">Email*</label></td>
+<td><input id="email" type="email" placeholder="user@example.com" required></td>
+</tr>
+<tr>
+<td><label for="birth">Date of birth*</label></td>
+<td><input id="birth" type="birth" placeholder="Day/Month/Year" required></td>
+</tr>
+
+            
+<tr>
+<td><label for="address">Address</label></td>
+<td><textarea id="address" placeholder="Enter your full address"></textarea></td>
+</tr>
+
+
+<tr>
+<td><label for="message">Message</label></td>
+<td><textarea id="message" placeholder="Any additional information..."></textarea></td>
+</tr>
+
+
+<tr>
+<td><label>Select Color</label></td>
+<td><input type="color" value="#4CAF50"></td>
+</tr>
+
+
+<tr>
+<td><label for="ice-cream">Favorite Flavor</label></td>
+<td>
+<input list="flavors" id="ice-cream" placeholder="Choose a flavor">
+<datalist id="flavors">
+<option value="Chocolate">
+<option value="Vanilla">
+<option value="Strawberry">
+<option value="Mint">
+<option value="Coconut">
+</datalist>
+</td>
+</tr>
+
+
+<tr>
+<td><label>Hobbies</label></td>
+<td>
+Reading <input type="checkbox" value="reading">
+Writing <input type="checkbox" value="writing" checked>
+Cooking <input type="checkbox" value="cooking">
+Sports <input type="checkbox" value="sports">
+</td>
+</tr>
+
+
+<tr>
+<td><label for="city">City</label></td>
+<td>
+<select id="city" size="1">
+<option value="">Select City</option>
+<option value="delhi">Delhi</option>
+<option value="mumbai">Mumbai</option>
+<option value="chennai" selected>Chennai</option>
+<option value="kolkata">Kolkata</option>
+<option value="bangalore">Bangalore</option>
+<option value="ghaziabad">Ghaziabad</option>
+</select>
+
+
+</td>
+</tr>
+
+
+<tr>
+<td><label for="photo">Upload Photo</label></td>
+<td><input id="photo" type="file" accept="image/*"></td>
+</tr>
+
+
+<tr>
+<td><label for="resume">Upload Resume</label></td>
+<td><input id="resume" type="file" accept=".pdf,.doc,.docx"></td>
+</tr>
+
+<tr>
+<td colspan="2" style="text-align: center;">
+<input type="submit" value="Submit">
+<input type="reset" value="Clear">
+</td>
+</tr>
+
+</form>
+
+</table>
+
+</div>
+
+
+
+</body>
+
+
+
+</html>
+
+
+
+
