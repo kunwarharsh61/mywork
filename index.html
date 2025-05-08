@@ -4,12 +4,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head> 
-
 <title> HARSH KUNWAR </title>
-
 </head>
-<style>
 
+<style>
 @keyframes runbanner {
 10% { left: 0%; }
 20% { left: -19%; }
@@ -22,22 +20,20 @@
 90% { left: -76%; }
 }
 
-header
-{
+header {
 width: 500%;
 height: 420px;
 margin-top: -5px;
 position: relative; 
 white-space: nowrap; 
 overflow: hidden;
+background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
 }
 
-
-.picture
-{
+.picture {
 width: 19.5%;
 height: 100%;
-box-shadow: 10px 10px 10px gray;
+box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
 position: relative;
 animation: runbanner 15s infinite;
 padding: 10px;
@@ -45,125 +41,109 @@ display: inline-block;
 vertical-align: top;  
 }
 
-.picture
-{
+.picture {
 cursor:pointer;
 }
 
-
-
-.pict
-{
+.pict {
 width:100%;
 height:200px;
 }
 
-.pic
-{
+.pic {
 width: 25%;
 Margin:auto;
 margin-top: 10px;
 border-radius:100%;
+border: 3px solid #ff9a9e;
 }
 
-#main
-{
+#main {
 width:50%;
 margin:Auto;
 margin-top:40px;
 font-size:20px;
-border:2px black solid;
+border:2px solid #ff6b6b;
 text-align:center;
 padding:10px;
+background: linear-gradient(to right, #fff5f5, #ffefef);
+border-radius: 10px;
 }
 
-body
-{
+body {
 Margin: 0px; 
 font-family: Arial, sans-serif; 
 margin: 0; 
 padding: 0;
-background-color:; 
+background: linear-gradient(to bottom, #fffaf0, #fff5e6);
 color: #333533; 
 text-align: center;
 overflow-x:hidden;
 }
 
-
-.side-nav
-{
+.side-nav {
 width:100%;
 text-align:center;
 margin:0;
 padding:0;
 }
 
-.side-nav ol
-{
+.side-nav ol {
 list-style:none;
 padding:0;
 margin:0;
 text-align:center;
- display:none;
+display:none;
 }
 
-.side-nav ol li
-{
-background:teal;
+.side-nav ol li {
+background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
 padding:15px;
- width:100%;
+width:100%;
 border-bottom:1px white ridge; 
 box-shadow:0 5px 5px rgba(0,0,0,0.2);
 display:block;
 }
 
-.side-nav ol li:hover
-{
-background:black;
+.side-nav ol li:hover {
+background: linear-gradient(135deg, #ff4757 0%, #ff6b81 100%);
 }
 
 .side-nav ol li a:link,
-.side-nav ol li a:visited
-{
+.side-nav ol li a:visited {
 color:white;
 font-size:18px;
 text-decoration:none;
 display:block;
 }
 
-.side-nav ol li:hover a
-{
+.side-nav ol li:hover a {
 text-decoration:underline;
 }
 
-#menu
-{
+#menu {
 cursor:pointer;
 font-size:40px;
-background:gray;
+background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
 padding:10px 15px;
 display:block;
 text-align:center;
 color:white;
 }
 
-.side-nav:hover ol
-{
+.side-nav:hover ol {
 display:block;
 }
 
-
-.desktop-nav
-{
+.desktop-nav {
 width:100%;
-background:#FF6F3C;
+background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
 padding:20px 0;
 text-align:center;
 display:none;
 }
 
-.desktop-nav a
-{
+.desktop-nav a {
 color:white;
 font-size:20px;
 padding:20px;
@@ -171,15 +151,14 @@ text-decoration:none;
 transition:0.3s;
 }
 
-.desktop-nav a:hover
-{
+.desktop-nav a:hover {
 text-decoration:underline;
-background:black;
+background: linear-gradient(135deg, #ff4757 0%, #ff6b81 100%);
 padding:15px 20px;
 }
 
 footer {
-background: #333;
+background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
 color: white;
 text-align: center;
 padding: 20px;
@@ -187,27 +166,27 @@ font-family: Arial;
 font-size: 14px;
 margin-top:50px;
 }
+
 footer h3 {
-color: orange;
+color: #ffcc5c;
 margin-bottom: 10px;
+text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
+
 footer p {
 margin: 5px;
 }
 
 /* Extra small devices (phones,600px and down) */
-@media only screen and (max-width: 600px) 
-{
-.pic
-{
+@media only screen and (max-width: 600px) {
+.pic {
 width: 55%;
 Margin:auto;
 margin-top: 10px;
 border-radius:100%;
-  }
+}
 
-#main
-{
+#main {
 width:60%;
 margin:Auto;
 margin-top:20px;
@@ -215,25 +194,20 @@ font-size:10px;
 border:0px black solid;
 text-align:justify;
 padding:10px;
-  }
+}
 
-header
-{
+header {
 height: 150px;
-
 }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px)
-{
-.side-nav
-{
+@media only screen and (min-width: 768px) {
+.side-nav {
 display:none;
 }
   
-.desktop-nav
-{
+.desktop-nav {
 display:block;
 }
 }
@@ -259,7 +233,6 @@ display:block;
 </a>
 </header>
 
-
 <nav class="side-nav">
 <span id="menu">  &#9776;</span>
 <ol>
@@ -279,14 +252,14 @@ display:block;
 <a href="#main">About me</a>
 </nav>
 
-<img src="harshkunwar.jpeg" class="pic">
+<img src="images/harshkunwar.jpeg" class="pic">
 
 <p Style="font-size: 20px; color: black;">
  I'm Harsh Kunwar. Explore my work and learn more about me!
 </p>
 
 <div id="main">
-<h3 Style="font-size: 40px; color: Black;"><b>About me</b> </h3>
+<h3 Style="font-size: 40px; color: #ff6b6b;"><b>About me</b> </h3>
 
 <p Style="font-size: 20px; color: black;">
 I'm Harsh Kunwar, a passionate graphic, motion graphic, and web designer with a keen eye for aesthetics and a love for storytelling through design. 
